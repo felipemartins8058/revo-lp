@@ -1,0 +1,5 @@
+import "./src/styles/global.css"
+import "@fontsource/assistant"
+import "@fontsource/assistant/800.css"
+import "@fontsource/work-sans"
+import "@fontsource/work-sans/700.css"
