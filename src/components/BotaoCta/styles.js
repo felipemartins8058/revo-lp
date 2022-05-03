@@ -9,4 +9,10 @@ export const BtnPrimary = styled.a `
     border-radius: 5px;
     box-shadow: 0px 0px 16px #D42E2B;
     font-family: 'Work Sans', sans-serif;
+    transition: all 0.3s ease;
+
+    &:hover {
+        box-shadow: 0px 0px 32px #D42E2B;
+        transition: all 0.3s ease;
+    }
 `

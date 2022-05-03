@@ -2,15 +2,15 @@ import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 import * as Styled from "./styles";
 
-const ProvaSocial = ({ reverse, logoName, infoBigText1, infoBigText2, infoSmallText1, infoSmallText2, infoText, infoSmallText3}) => {
+const ProvaSocial = ({ reverse, logoName, infoBigText1, infoBigText2, infoSmallText1, infoSmallText2, infoText, infoSmallText3, showIcon}) => {
 
     function StaticImageLogo(logoName) {
         if (logoName === "odontoart") {
             return <StaticImage src="../../images/odontoart.png" />
         } else if (logoName === "notustorres") {
-            return <StaticImage src="../../images/notustorres.png" />
-        } else {
             return <StaticImage src="../../images/jocross.png" />
+        } else {
+            return <StaticImage src="../../images/brisanet.png" />
         }
     }
 
@@ -46,9 +46,9 @@ const ProvaSocial = ({ reverse, logoName, infoBigText1, infoBigText2, infoSmallT
                             </div>
                         </Styled.InfoBox>
                         <Styled.InfoBox>
-                            <div>
+                            <Styled.Visibility visibility={showIcon}>
                                 <StaticImage src="../../images/plus_yellow.png" />
-                            </div>
+                            </Styled.Visibility>
                             <div>
                                 <Styled.Text>{infoText}</Styled.Text>
                                 <Styled.SmallText>{infoSmallText3}</Styled.SmallText>

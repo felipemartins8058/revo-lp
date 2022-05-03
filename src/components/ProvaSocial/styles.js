@@ -140,3 +140,7 @@ export const BlurFrameRound = styled.div`
         transform: translatex(-50%);
     }
 `;
+
+export const Visibility = styled.div`
+    visibility: ${(props) => `${props.visibility ? "hidden" : "visible"}`};
+`

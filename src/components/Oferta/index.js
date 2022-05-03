@@ -14,12 +14,15 @@ const Oferta = () => {
                 <Styled.ContentGrid>
                     <div>
                         <Styled.Text marginBottom={.5}>Entrada +</Styled.Text>
-                        <Styled.BigText marginBottom={.5}>2x de R$599,00</Styled.BigText>
-                        <Styled.SmallText marginBottom={.5}>ou Entrada + R$997,00</Styled.SmallText>
+                        <Styled.BigText marginBottom={.5}>2x de R$2997,00</Styled.BigText>
+                        <Styled.SmallText marginBottom={.5}>ou 12x R$897,00</Styled.SmallText>
                     </div>
                     <Styled.AlignCenter>
                         <Styled.SmallText marginBottom={.5}>Oferta especial! Acaba em:</Styled.SmallText>
-                        <Styled.Text marginBottom={1.2}>10h 16min 17s</Styled.Text>
+                        <div id="countdown">
+                            <Styled.Text marginBottom={1.2}>2 dias e 19 horas</Styled.Text>
+                            {console.log(new Date())}
+                        </div>
                         <BotaoCta/>
                     </Styled.AlignCenter>
                 </Styled.ContentGrid>

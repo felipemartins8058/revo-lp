@@ -5,6 +5,7 @@ export const TimelineWrapper = styled.div`
     display: flex;
     flex-direction: column;
     margin-bottom: 11rem;
+    width: 100%;
 `;
 
 export const TimelineItem = styled.div`
@@ -27,7 +28,7 @@ export const ItemContainer = styled.div`
     margin-right: ${props => `${(props.marginRight)}rem`};
 
     @media (max-width: 576px){
-        margin-left: 3rem   ;
+        margin-left: 1rem;
     }
 `;
 
@@ -69,7 +70,7 @@ export const TimelineLine = styled.div`
     height: 100%;
 
     @media (max-width: 576px){
-        left: 6%;
+        left: 1%;
     }
 `
 
@@ -110,6 +111,6 @@ export const TimelineEnd = styled.div`
     transform: translateX(-50%);
 
     @media (max-width: 576px){
-        left: 24%;
+        left: 29%;
     }
 `

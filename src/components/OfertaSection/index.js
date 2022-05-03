@@ -18,7 +18,7 @@ const OfertaSection = () => {
                 <Oferta/>
                 <Styled.Safety>
                     <StaticImage src="../../images/safety_icon.png"/>
-                    <p>Unimos o método que irá transformar os resultados do seu negócio.</p>
+                    <p>Em caso de não obter o resultado desejado, você será ressarcido sobre condições especiais*</p>
                 </Styled.Safety>
             </div>
         </Styled.Section>
